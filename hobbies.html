@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hobbies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* code for the sidebar */
+        .sidenav {
+            height: 100%; /* Full-height: remove this if you want "auto" height */
+            width: 160px; /* Set the width of the sidebar */
+            position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+            z-index: 1; /* Stay on top */
+            top: 0; /* Stay at the top */
+            left: 0;
+            background-color: #000000; /* Black */
+            overflow-x: hidden; /* Disable horizontal scroll */
+            padding-top: 20px;
+        }   
+
+        /* The navigation menu links */
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .gallery-item {
+            margin: 10px;
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Personal Hobbies and Activities</h1>
+    </header>
+
+    <div class="sidenav">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="hobbies.html">Hobbies</a>
+    </div>
+
+    <div class="container">
+        <h2>Classical Guitar</h2>
+        <p>
+            I'm also an avid classical guitarist. I have played classical guitar for over 
+            16 years, and participate in the University of Washington Classical Guitar Ensemble. 
+            Below are some videos from concerts and performance classes I participated in while at 
+            UW!
+        </p>
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href = "https://www.youtube.com/watch?v=28N1eYmL6jU">
+                    <img 
+                        src = "images\guitar_images\2022_ensemble_concert.png""
+                        alt = "Ensemble Concert [June 7, 2022]"
+                        width = 200px
+                        height = 200px>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href = "https://www.youtube.com/watch?v=7CCbjp4LdaM">
+                    <img 
+                        src = "images\guitar_images\2023_ensemble_concert.png""
+                        alt = "Ensemble Concert [Mar 18, 2023]"
+                        width = 200px
+                        height = 200px>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href = "https://www.youtube.com/watch?v=IW4NYzzyha8">
+                    <img 
+                        src = "images\guitar_images\la_rose_ensemble_class.png"
+                        alt = "La Rose: Guliani [Mar 11, 2022]"
+                        width = 200px
+                        height = 200px>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href = "https://www.youtube.com/watch?v=OEcA6dy2n4w"> 
+                    <img
+                        src = "images\guitar_images\2022_june_performance_class.png"
+                        alt = "Performance Class[June 7, 2022]"
+                        width = 200px
+                        height = 200px>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href = "https://www.youtube.com/watch?v=pt4IqYk_w_0">
+                    <img
+                        src = "images\guitar_images\2022_nov_performance_class.png"
+                        alt = "Performance Class [November 16, 2022]"
+                        width = 200px
+                        height = 200px>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href = "https://www.youtube.com/watch?v=fCgKulfbreg"> 
+                    <img 
+                        src = "images\guitar_images\decameron_negro_ensemble_class.png"
+                        alt = "El Decameron Negro Performance Class [April 21, 2022]"
+                        width = 200px
+                        height = 200px>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Grey Matters </h2>
+        <p>
+           Throughout my undergraduate career, I have been a member of the Grey Matters Neuroscience
+           journal. I started as an editor before becoming a production manager. 
+        </p>
+    </div>
+</body>
+</html>

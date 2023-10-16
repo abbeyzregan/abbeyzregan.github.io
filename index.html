@@ -46,6 +46,7 @@
             background-color: white;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
         }
 
         footer {
@@ -54,7 +55,7 @@
             text-align: center;
             padding: 10px;
         }
-        h3 a {
+        h3 a { /* makes a box around the links to my github page */
             text-decoration: none; /* Remove default underline */
             background-color: #3498db; /* Background color */
             color: #fff; /* Text color */
@@ -62,6 +63,37 @@
             border-radius: 5px; /* Rounded corners */
             transition: background-color 0.3s; /* Smooth background color transition on hover */
             display: inline-block; /* Display as a block element */
+        }
+        /* code for the sidebar */
+        .sidenav {
+            height: 100%; /* Full-height: remove this if you want "auto" height */
+            width: 160px; /* Set the width of the sidebar */
+            position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+            z-index: 1; /* Stay on top */
+            top: 0; /* Stay at the top */
+            left: 0;
+            background-color: #000000; /* Black */
+            overflow-x: hidden; /* Disable horizontal scroll */
+            padding-top: 20px;
+        }   
+
+        /* The navigation menu links */
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .content {
+            margin-left: 260px;
+            padding: 20px;
         }
     </style>
 </head>
@@ -75,6 +107,12 @@
         <a href="#compbio">Code and Comp Bio</a>
         <a href="#contact">Contact</a>
     </nav>
+
+    <div class="sidenav">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="hobbies.html">Hobbies</a>
+    </div>
 
     <div class="container" id="about">
         <h2>About Me</h2>
